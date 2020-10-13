@@ -1,0 +1,12 @@
+cradle:
+  direct:
+    arguments:
+      - -XOverloadedStrings
+      - -XTypeApplications
+      - -XDataKinds
+      - -fwarn-unused-binds
+      - -fwarn-unused-imports
+      - -fwarn-orphans
+      - -Wno-missing-home-modules
+      - -isrc
+      - -iapp
