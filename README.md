@@ -12,12 +12,13 @@ This is a library+exe project generated with `cabal init`.
    There is a `shell.nix` which contains these. Use lorri and
    emacs-direnv to integrate with emacs.
 
-2. Verify that `cabal build all` works.
+2. Verify that `cabal build all` works. Once that is tested, remove
+   `dist-newstyle` and `.ghc.environment*`.
 
-3. Set up hie.yaml link
+3. Set up a `hie.yaml` symlink:
 
    ```
-   ln -s direct-hie.yaml
+   ln -s direct-hie.yaml hie.yaml
    ```
 
 4. Open `app/Main.hs` in emacs with `lsp-haskell`. There is a
@@ -55,4 +56,4 @@ Dependencies:
 - [x] `hie-bios debug app/Main.hs` reports correct ghc `-i` options.
 - [x] Test latest ghcide -- same result
 - [x] Test ghc8102 -- ghcide won't build
-- [x] Test ghc844
+- [x] Test ghc884
